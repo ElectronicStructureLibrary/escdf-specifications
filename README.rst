@@ -2,8 +2,8 @@ Electronic Structure Comon Data Format Specifications
 =====================================================
 
 .. image:: https://readthedocs.org/projects/escdf-specs/badge/?version=latest
-:target: http://escdf-specs.readthedocs.io/en/latest/?badge=latest
-:alt: Documentation Status
+   :target: http://escdf-specs.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
 
 This projects gathers the working documents used to design the specifications
 of the Electronic Structure Common Data Format (ESCDF), an initiative of the
