@@ -1,20 +1,6 @@
-.. raw:: mediawiki
-
-   {{techbox |
-   data standards = 
-   <li>[[ESCDF - Electronic Structure Common Data Format]]</li>
-   <li>[[ESCDF - System]]</li>
-   <li>[[ESCDF - Densities]]</li>
-   <li>[[ESCDF - Potentials]]</li>
-   <li>[[ESCDF - States]]</li>
-   <li>[[ESCDF - Extensions]]</li> |
-   software = <li>[[libescdf]]</li> |}}
-
-Version
--------
-
-File format version number:
-
+Basis Sets
+==========
+	 
 General overview
 ----------------
 
@@ -150,10 +136,3 @@ Variables relating to atom-centered basis sets
 
 TODO. See discussion page for more details.
 
---------------
-
-Back to `ESCDF - Electronic Structure Common Data
-Format <ESCDF_-_Electronic_Structure_Common_Data_Format>`__
-
-`Category:ESL entries <Category:ESL_entries>`__ Category:I/O
-`Category:Data standards <Category:Data_standards>`__
