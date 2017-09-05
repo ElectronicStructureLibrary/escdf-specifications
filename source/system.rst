@@ -1,19 +1,5 @@
-.. raw:: mediawiki
-
-   {{techbox |
-   data standards = 
-   <li>[[ESCDF - Electronic Structure Common Data Format]]</li>
-   <li>[[ESCDF - Basis sets]]</li>
-   <li>[[ESCDF - Densities]]</li>
-   <li>[[ESCDF - Potentials]]</li>
-   <li>[[ESCDF - States]]</li>
-   <li>[[ESCDF - Extensions]]</li> |
-   software = <li>[[libescdf]]</li> |}}
-
-Version
--------
-
-File format version number:
+System
+======
 
 General overview
 ----------------
@@ -294,7 +280,7 @@ system.
    (``0``), or be part of the unit cell of crystal 1 (``1``) or crystal
    2 (``2``).
 
-.. figure:: semi_infinite.svg
+.. figure:: Semi_infinite.svg
    :alt: Schematic of the semi-infinite setup.
 
    Schematic of the semi-infinite setup.
@@ -383,7 +369,7 @@ NOMAD Meta Info
 ---------------
 
 The ESCDF specifications for the **system** group follow closely the
-`**section\_system** <https://metainfo.nomad-coe.eu/nomadmetainfo_public/index.html#/public/section_system>`__
+`section\_system <https://metainfo.nomad-coe.eu/nomadmetainfo_public/index.html#/public/section_system>`__
 from the NOMAD Meta Info. There was a effort from both projects to keep
 the specifications fully compatible, so any changes in these
 specifications should be discussed and agreed with the NOMAD project.
@@ -417,11 +403,3 @@ number\_of\_sites=5 number\_of\_species=4 (La, Sr, O, Mn) having
 number\_of\_species\_at\_site[1]=2 with occupations
 concentration\_of\_species\_at\_site[1][1]=0.7 and
 concentration\_of\_species\_at\_site[1][2]=0.3
-
---------------
-
-Back to `ESCDF - Electronic Structure Common Data
-Format <ESCDF_-_Electronic_Structure_Common_Data_Format>`__
-
-`Category:ESL entries <Category:ESL_entries>`__ Category:I/O
-`Category:Data standards <Category:Data_standards>`__

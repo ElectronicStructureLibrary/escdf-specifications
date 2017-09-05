@@ -1,19 +1,5 @@
-.. raw:: mediawiki
-
-   {{techbox |
-   data standards = 
-   <li>[[ESCDF - Electronic Structure Common Data Format]]</li>
-   <li>[[ESCDF - System]]</li>
-   <li>[[ESCDF - Basis sets]]</li>
-   <li>[[ESCDF - Densities]]</li>
-   <li>[[ESCDF - Potentials]]</li>
-   <li>[[ESCDF - States]]</li> |
-   software = <li>[[libescdf]]</li> |}}
-
-Version
--------
-
-File format version number:
+Extensions
+==========
 
 General overview
 ----------------
@@ -28,9 +14,9 @@ can be added to the specifications.
 
 In order to be valid, an extension must:
 
--  select one and only one **** lower-case keyword that actually
+-  select one and only one **\<name\_of\_project\>** lower-case keyword that actually
    represents the corresponding software project;
--  use **/extensions/** as root namespace;
+-  use **/extensions/\<\name\_of\_project\>** as root namespace;
 -  follow the general guidelines of the file format regarding the
    contents of the group;
 -  provide an up-to-date documentation on the ESL wiki.
@@ -61,10 +47,3 @@ currently participating to the data format initiative.
 | sprkkr       | Munich SPR-KKR   | http://ebert.cup.uni-muenchen.de/sprkkr   |
 +--------------+------------------+-------------------------------------------+
 
---------------
-
-Back to `ESCDF - Electronic Structure Common Data
-Format <ESCDF_-_Electronic_Structure_Common_Data_Format>`__
-
-`Category:ESL entries <Category:ESL_entries>`__ Category:I/O
-`Category:Data standards <Category:Data_standards>`__

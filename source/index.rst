@@ -13,7 +13,8 @@ Contents:
    :maxdepth: 2
 
    introduction
-   systems
+   common
+   system
    basis_sets
    densities
    potentials
