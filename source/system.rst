@@ -17,6 +17,7 @@ The group must have the following attributes:
 -  **system\_name**
 -  **number\_of\_physical\_dimensions**
 -  **dimension\_types**
+-  **lattice\_vectors**
 -  **embedded\_system**
 -  **number\_of\_species**
 -  **number\_of\_sites**
@@ -24,10 +25,13 @@ The group must have the following attributes:
 The group may have the following optional attributes:
 
 -  **number\_of\_symmetry\_operations**
+-  **symmorphic**
+-  **time\_reversal\_symmetry**
+-  **spacegroup\_3D\_number**
+-  **bulk\_regions\_for\_semi\_infinite\_dimension**
 
 The group must contain the following datasets:
 
--  **lattice\_vectors**
 -  **species\_at\_sites**
 
 The group must contain at least one of the following datasets:
@@ -45,14 +49,10 @@ The group may contain the following optional datasets:
 
 -  **reduced\_symmetry\_matrices**
 -  **reduced\_symmetry\_translations**
--  **spacegroup\_3D\_number**
--  **symmorphic**
--  **time\_reversal\_symmetry**
 -  **number\_of\_species\_at\_site**
 -  **concentration\_of\_species\_at\_site**
 -  **local\_rotations**
 -  **magnetic\_moments**
--  **bulk\_regions\_for\_semi\_infinite\_dimension**
 -  **site\_regions**
 -  **cell\_in\_host**
 -  **site\_in\_host**
@@ -108,7 +108,7 @@ orthonormalized set or to a large box containing the molecule. The
 latter would be particularly useful for a periodic code reading in the
 geometry.
 
--  **lattice\_vectors**: dataset, double
+-  **lattice\_vectors**: attribute, double
    [**number\_of\_physical\_dimensions**]
    [**number\_of\_physical\_dimensions**] (dimensional variable: length)
    Holds the real-space lattice vectors (in Cartesian coordinates) of
@@ -238,13 +238,13 @@ specified, at least the first three need to be included.
    The translation vector in reduced coordinates (without a factor of
    :math:`2 \pi`) for each symmetry operation.
 
--  **spacegroup\_3D\_number**: dataset, unsigned int (between ``1`` and
+-  **spacegroup\_3D\_number**: attribute, unsigned int (between ``1`` and
    ``232``)
    Specifies the International Union of Crystallography (IUC) number of
    the 3D space group that defines the symmetry group of the simulated
    physical system.
 
--  **symmorphic**: dataset, char(3) (``yes`` or ``no``)
+-  **symmorphic**: attribute, char(3) (``yes`` or ``no``)
    Is the space group symmorphic? Set to ``yes`` if all translations are
    zero.
 
@@ -255,7 +255,7 @@ These variables are optional. Further specifications may be needed for
 magnetic space groups and the action of symmetry operations on the
 magnetic moments.
 
--  **time\_reversal\_symmetry**: dataset, char(3) (``yes`` or ``no``)
+-  **time\_reversal\_symmetry**: attribute, char(3) (``yes`` or ``no``)
    Is time-reversal symmetry present?
 
 Variables relating to a semi-infinite setup
@@ -269,7 +269,7 @@ additional variables listed below are needed. They define the unit cell
 of the two crystals, contained within the lattice vector of the whole
 system.
 
--  **bulk\_regions\_for\_semi\_infinite\_dimension**: dataset, double
+-  **bulk\_regions\_for\_semi\_infinite\_dimension**: attribute, double
    [``2``] (dimensional variable: length)
    The length of the lattice vector in the semi-infinite direction for
    the two crystals (see figure below).
